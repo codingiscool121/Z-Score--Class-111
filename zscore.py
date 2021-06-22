@@ -62,9 +62,9 @@ newgraph.add_trace(pg.Scatter(x=[meaninter3, meaninter3], y=[0,0.5], mode="lines
 newgraph.show()
 
 #zscore for samples 1,2,3
-zs1=(newmean-meaninter1)/newsd
-zs2=(newmean-meaninter2)/newsd
-zs3=(newmean-meaninter3)/newsd
+zs1=(meaninter1-newmean)/newsd
+zs2=(meaninter2-newmean)/newsd
+zs3=(meaninter3-newmean)/newsd
 
 print("Z score for sample 1: ", zs1)
 print("Z score for sample 2:", zs2)
